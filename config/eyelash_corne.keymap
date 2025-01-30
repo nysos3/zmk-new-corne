@@ -188,16 +188,16 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TILDE       &kp Q                      &kp W                        &kp E                     &kp R                            &kp T                                                    &mmv MOVE_UP                     &kp Y                        &kp U                                 &kp I                      &kp O                     &kp P                          &kp PLUS
-&kp MINUS       &homey_left_pinky LCTRL A  &homey_left_ring LEFT_ALT S  &homey_left_middy LGUI D  &homey_left_index LSHIFT F       &kp G                                    &mmv MOVE_LEFT  &mkp MB1        &mmv MOVE_RIGHT  &kp H                        &homey_right_index LSHIFT J           &homey_right_middy LGUI K  &homey_right_ring LALT L  &homey_right_pinky LCTRL SEMI  &kp SQT
-&kp LEFT_SHIFT  &kp Z                      &kp X                        &kp C                     &kp V                            &kp B                      &kp C_MUTE                    &mmv MOVE_DOWN                   &kp N                        &kp M                                 &kp COMMA                  &kp DOT                   &kp FSLH                       &kp ESC
-                                                                        &kp LGUI                  &thumb_layer_access 1 BACKSPACE  &thumb_layer_access 3 DEL                                                                 &thumb_layer_access 3 ENTER  &thumb_layer_access_spacebar 2 SPACE  &kp RALT
+&kp TILDE       &kp Q                      &kp W                        &kp E                      &kp R                            &kp T                                                    &mmv MOVE_UP                     &kp Y                        &kp U                                 &kp I                      &kp O                     &kp P                          &kp PLUS
+&kp MINUS       &homey_left_pinky LCTRL A  &homey_left_ring LEFT_ALT S  &homey_left_middy LGUI D   &homey_left_index LSHIFT F       &kp G                                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H                        &homey_right_index LSHIFT J           &homey_right_middy LGUI K  &homey_right_ring LALT L  &homey_right_pinky LCTRL SEMI  &kp SQT
+&kp LEFT_SHIFT  &kp Z                      &kp X                        &kp C                      &kp V                            &kp B                      &kp C_MUTE                    &mmv MOVE_DOWN                   &kp N                        &kp M                                 &kp COMMA                  &kp DOT                   &kp FSLH                       &kp ESC
+                                                                        &thumb_layer_access 4 ESC  &thumb_layer_access 1 BACKSPACE  &thumb_layer_access 3 DEL                                                                 &thumb_layer_access 3 ENTER  &thumb_layer_access_spacebar 2 SPACE  &kp TAB
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
-        lower_layer {
+        number {
             display-name = "NUMBER";
             bindings = <
 &trans  &kp N1           &kp N2          &kp N3        &kp N4        &kp N5                                         &mmv MOVE_UP                     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
@@ -231,6 +231,50 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
+        };
+
+        function {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                                    &trans  &trans  &trans
+            >;
+
+            label = "function";
+        };
+
+        wndw_mgmt {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                                    &trans  &trans  &trans
+            >;
+
+            label = "window";
+        };
+
+        symbol {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                                    &trans  &trans  &trans
+            >;
+
+            label = "symbol";
+        };
+
+        cursor {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                                    &trans  &trans  &trans
+            >;
+
+            label = "cursor";
         };
     };
 };
