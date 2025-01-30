@@ -30,7 +30,141 @@
             compatible = "zmk,behavior-tap-dance";
             display-name = "Shift/Caps Lock Tap Dance";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
+            bindings = <&kp LEFT_SHIFT>, <&caps_word>;
+        };
+
+        homey_left_pinky: homey_left_pinky {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEY_LEFT_PINKY";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            hold-trigger-key-positions = <7 8 10 11 12 22 23 24 25 26 27 36 37 38 39 40 41 46 47 9 45 42 43 44>;
+            flavor = "balanced";
+            tapping-term-ms = <310>;
+            quick-tap-ms = <350>;
+            require-prior-idle-ms = <200>;
+            hold-trigger-on-release;
+        };
+
+        homey_right_pinky: homey_right_pinky {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEY_RIGHT_PINKY";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <310>;
+            quick-tap-ms = <350>;
+            require-prior-idle-ms = <200>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <0 1 2 3 4 5 13 14 15 16 17 18 28 29 30 31 32 33 42 43 44 45 46 47>;
+        };
+
+        homey_left_ring: homey_left_ring {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEY_LEFT_RING";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <290>;
+            quick-tap-ms = <350>;
+            require-prior-idle-ms = <200>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <7 8 9 10 11 12 22 23 24 25 26 27 36 37 38 39 40 41 45 46 47 42 43 44>;
+        };
+
+        homey_right_ring: homey_right_ring {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEY_RIGHT_RING";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <290>;
+            quick-tap-ms = <350>;
+            require-prior-idle-ms = <200>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <0 1 2 3 4 5 13 14 15 16 17 18 28 29 30 31 32 33 42 43 44 45 46 47>;
+        };
+
+        homey_left_middy: homey_left_middy {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEY_LEFT_MIDDY";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <260>;
+            quick-tap-ms = <350>;
+            require-prior-idle-ms = <200>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <7 8 9 10 11 12 22 23 24 25 26 27 36 37 38 39 40 41 45 46 47 42 43 44>;
+        };
+
+        homey_right_middy: homey_right_middy {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEY_RIGHT_MIDDY";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <260>;
+            quick-tap-ms = <350>;
+            require-prior-idle-ms = <200>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <0 1 13 14 15 16 17 18 28 29 30 31 32 33 42 43 44 2 3 4 5 45 46 47>;
+        };
+
+        homey_left_index: homey_left_index {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEY_LEFT_INDEX";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <220>;
+            quick-tap-ms = <350>;
+            require-prior-idle-ms = <200>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <42 43 44 45 46 47 7 8 9 10 11 12 22 23 24 25 26 27 36 37 38 39 40 41>;
+        };
+
+        homey_right_index: homey_right_index {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEY_RIGHT_INDEX";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <220>;
+            quick-tap-ms = <350>;
+            require-prior-idle-ms = <200>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <0 1 2 3 4 5 13 14 15 16 17 18 28 29 30 31 32 33 42 43 44 45 46 47>;
+        };
+
+        thumb_layer_access: thumb_layer_access {
+            compatible = "zmk,behavior-hold-tap";
+            label = "THUMB_LAYER_ACCESS";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <250>;
+            quick-tap-ms = <350>;
+        };
+
+        thumb_layer_access_spacebar: thumb_layer_access_spacebar {
+            compatible = "zmk,behavior-hold-tap";
+            label = "THUMB_LAYER_ACCESS_SPACEBAR";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <250>;
+            quick-tap-ms = <200>;
         };
     };
 
@@ -54,10 +188,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TILDE       &kp Q  &kp W  &kp E     &kp R            &kp T                                    &mmv MOVE_UP                     &kp Y        &kp U        &kp I      &kp O    &kp P     &kp PLUS
-&kp MINUS       &kp A  &kp S  &kp D     &kp F            &kp G                    &mmv MOVE_LEFT  &mkp MB1        &mmv MOVE_RIGHT  &kp H        &kp J        &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C     &kp V            &kp B      &kp C_MUTE                    &mmv MOVE_DOWN                   &kp N        &kp M        &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                              &kp LGUI  &lt 1 BACKSPACE  &lt 3 DEL                                                                 &lt 3 ENTER  &lt 2 SPACE  &kp RALT
+&kp TILDE       &kp Q                      &kp W                        &kp E                     &kp R                            &kp T                                                    &mmv MOVE_UP                     &kp Y                        &kp U                                 &kp I                      &kp O                     &kp P                          &kp PLUS
+&kp MINUS       &homey_left_pinky LCTRL A  &homey_left_ring LEFT_ALT S  &homey_left_middy LGUI D  &homey_left_index LSHIFT F       &kp G                                    &mmv MOVE_LEFT  &mkp MB1        &mmv MOVE_RIGHT  &kp H                        &homey_right_index LSHIFT J           &homey_right_middy LGUI K  &homey_right_ring LALT L  &homey_right_pinky LCTRL SEMI  &kp SQT
+&kp LEFT_SHIFT  &kp Z                      &kp X                        &kp C                     &kp V                            &kp B                      &kp C_MUTE                    &mmv MOVE_DOWN                   &kp N                        &kp M                                 &kp COMMA                  &kp DOT                   &kp FSLH                       &kp ESC
+                                                                        &kp LGUI                  &thumb_layer_access 1 BACKSPACE  &thumb_layer_access 3 DEL                                                                 &thumb_layer_access 3 ENTER  &thumb_layer_access_spacebar 2 SPACE  &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
