@@ -284,8 +284,8 @@ layers:
   - {t: '3', s: '#'}
   - Alt+Sft+$$mdi:arrow-up-bold$$
   - Alt+Sft+$$mdi:arrow-down-bold$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: 'Gui+[', s: 'Gui+{'}
+  - {t: 'Gui+]', s: 'Gui+}'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
