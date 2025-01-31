@@ -191,10 +191,21 @@
 &kp TILDE       &kp Q                      &kp W                        &kp E                      &kp R                            &kp T                                                    &mmv MOVE_UP                     &kp Y                        &kp U                                 &kp I                      &kp O                     &kp P                          &kp PLUS
 &kp MINUS       &homey_left_pinky LCTRL A  &homey_left_ring LEFT_ALT S  &homey_left_middy LGUI D   &homey_left_index LSHIFT F       &kp G                                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H                        &homey_right_index LSHIFT J           &homey_right_middy LGUI K  &homey_right_ring LALT L  &homey_right_pinky LCTRL SEMI  &kp SQT
 &kp LEFT_SHIFT  &kp Z                      &kp X                        &kp C                      &kp V                            &kp B                      &kp C_MUTE                    &mmv MOVE_DOWN                   &kp N                        &kp M                                 &kp COMMA                  &kp DOT                   &kp FSLH                       &kp ESC
-                                                                        &thumb_layer_access 4 ESC  &thumb_layer_access 1 BACKSPACE  &thumb_layer_access 3 DEL                                                                 &thumb_layer_access 3 ENTER  &thumb_layer_access_spacebar 2 SPACE  &kp TAB
+                                                                        &thumb_layer_access 1 ESC  &thumb_layer_access 2 BACKSPACE  &thumb_layer_access 4 DEL                                                                 &thumb_layer_access 4 ENTER  &thumb_layer_access_spacebar 3 SPACE  &kp TAB
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+        };
+
+        cursor {
+            bindings = <
+&kp LG(F)  &kp LSHIFT  &kp LG(Y)  &kp LG(Z)  &kp BACKSPACE  &kp LG(X)                   &trans          &kp LG(X)  &none           &none         &none           &none            &none
+&kp LG(L)  &kp LCTRL   &kp LALT   &kp LGUI   &kp LSHIFT     &kp LG(C)           &trans  &trans  &trans  &kp LG(C)  &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LG(L)
+&none      &none       &none      &none      &kp F          &kp LG(V)  &none            &trans          &kp LG(V)  &kp HOME        &kp PG_UP     &kp PG_DN       &kp END          &none
+                                  &trans     &none          &none                                       &none      &none           &mo 7
+            >;
+
+            label = "cursor";
         };
 
         number {
@@ -221,7 +232,7 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        layer_3 {
+        fn {
             display-name = "Fn";
             bindings = <
 &studio_unlock  &kp F1      &kp F2     &kp F3       &kp F4     &kp F5                                  &mmv MOVE_UP                     &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
@@ -231,17 +242,6 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
-        };
-
-        function {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                                    &trans  &trans  &trans
-            >;
-
-            label = "function";
         };
 
         wndw_mgmt {
@@ -266,15 +266,16 @@
             label = "symbol";
         };
 
-        cursor {
+        magic {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                                    &trans  &trans  &trans
+&none  &none            &none            &none            &none            &rgb_ug RGB_TOG                  &none         &bt BT_CLR    &none         &none         &none         &none         &bt BT_CLR_ALL
+&none  &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF           &none  &none  &none  &none         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&none  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFR  &none           &none         &none         &none         &none         &none         &none         &none
+                                         &trans           &none            &out OUT_BLE                                   &out OUT_USB  &none         &trans
             >;
 
-            label = "cursor";
+            label = "magic";
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
     };
 };
