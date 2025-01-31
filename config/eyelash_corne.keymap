@@ -222,10 +222,10 @@
         fn {
             display-name = "Fn";
             bindings = <
-&studio_unlock  &kp F1  &kp F2      &kp F3       &kp F4     &kp F5                                &mmv MOVE_UP                     &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
-&none           &none   &mkp LCLK   &mkp MCLK    &mkp RCLK  &none                 &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
-&none           &none   &sys_reset  &bootloader  &none      &none   &kp C_MUTE                    &mmv MOVE_DOWN                   &none        &none      &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
-                                    &none        &none      &trans                                                                 &none        &none      &none
+&studio_unlock  &kp F1  &kp F2      &kp F3       &kp F4     &kp F5                                &mmv MOVE_UP                     &kp F6  &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
+&none           &none   &mkp LCLK   &mkp MCLK    &mkp RCLK  &none                 &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &none   &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
+&none           &none   &sys_reset  &bootloader  &none      &none   &kp C_MUTE                    &mmv MOVE_DOWN                   &none   &none      &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
+                                    &none        &none      &trans                                                                 &none   &none      &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
