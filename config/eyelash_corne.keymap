@@ -245,9 +245,9 @@
 
         wndw_mgmt {
             bindings = <
-&kp TILDE  &none     &none             &kp LC(LA(UP))    &none              &kp LG(LC(F))                     &none         &kp N1         &kp LC(LA(U))   &kp LC(LA(I))     &none  &none  &none
-&kp TAB    &kp LGUI  &kp LC(LA(LEFT))  &kp LC(LA(DOWN))  &kp LC(LA(RIGHT))  &kp LC(LA(RET))            &none  &none  &none  &kp N2         &kp LC(LA(J))   &kp LC(LA(K))     &none  &none  &none
-&kp LSHFT  &none     &kp LGUI          &trans            &none              &kp LC(LA(BSPC))  &none           &none         &kp N3         &kp LA(LS(UP))  &kp LA(LS(DOWN))  &none  &none  &none
+&kp TILDE  &none     &none             &kp LC(LA(UP))    &none              &kp LG(LC(F))                     &none         &kp N1         &kp LC(LA(U))   &kp LC(LA(I))     &none         &none         &none
+&kp TAB    &kp LGUI  &kp LC(LA(LEFT))  &kp LC(LA(DOWN))  &kp LC(LA(RIGHT))  &kp LC(LA(RET))            &none  &none  &none  &kp N2         &kp LC(LA(J))   &kp LC(LA(K))     &none         &none         &none
+&kp LSHFT  &none     &kp LGUI          &trans            &none              &kp LC(LA(BSPC))  &none           &none         &kp N3         &kp LA(LS(UP))  &kp LA(LS(DOWN))  &kp LG(LBKT)  &kp LG(RBKT)  &none
                                        &kp LSHFT         &none              &none                                           &kp LC(LG(U))  &kp LC(LG(F))   &kp SPACE
             >;
 
