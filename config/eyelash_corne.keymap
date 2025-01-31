@@ -245,10 +245,10 @@
 
         wndw_mgmt {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                                    &trans  &trans  &trans
+&kp TILDE  &trans    &trans            &kp LC(LA(UP))    &trans             &kp LG(LC(F))                       &trans          &kp N1         &kp LC(LA(U))   &kp LC(LA(I))     &trans  &trans  &trans
+&kp TAB    &kp LGUI  &kp LC(LA(LEFT))  &kp LC(LA(DOWN))  &kp LC(LA(RIGHT))  &kp LC(LA(RET))             &trans  &trans  &trans  &kp N2         &kp LC(LA(J))   &kp LC(LA(K))     &trans  &trans  &trans
+&kp LSHFT  &trans    &kp LGUI          &trans            &trans             &kp LC(LA(BSPC))  &trans            &trans          &kp N3         &kp LA(LS(UP))  &kp LA(LS(DOWN))  &trans  &trans  &trans
+                                       &kp LSHFT         &trans             &trans                                              &kp LC(LG(U))  &kp LC(LG(F))   &kp SPACE
             >;
 
             label = "window";
