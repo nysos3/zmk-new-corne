@@ -31,7 +31,7 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - Z
   - X
-  - {t: C, h: window}
+  - {t: C, h: WINDOW}
   - V
   - B
   - $$mdi:volume-off$$
@@ -42,13 +42,13 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - $$mdi:keyboard-esc$$
-  - {t: '$$mdi:keyboard-esc$$', h: cursor}
+  - {t: '$$mdi:keyboard-esc$$', h: CURSOR}
   - {t: '$$mdi:backspace$$', h: NUM}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: Fn}
-  - {t: '$$mdi:keyboard-return$$', h: Fn}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: FUNC}
+  - {t: '$$mdi:keyboard-return$$', h: FUNC}
   - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
   - $$mdi:keyboard-tab$$
-  cursor:
+  CURSOR:
   - {t: F, h: '$$mdi:apple-keyboard-command$$'}
   - $$mdi:apple-keyboard-shift$$
   - Gui+Y
@@ -96,7 +96,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - magic
+  - MAGIC
   NUM:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -146,7 +146,7 @@ layers:
   - {t: '0', s: )}
   - {t: ., s: '>'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  Fn:
+  FUNC:
   - '&studio_unlock'
   - F1
   - F2
@@ -244,7 +244,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  window:
+  WINDOW:
   - '~'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -293,7 +293,7 @@ layers:
   - Ctl+Gui+U
   - Ctl+Gui+F
   - $$mdi:keyboard-space$$
-  magic:
+  MAGIC:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
