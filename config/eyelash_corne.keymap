@@ -197,7 +197,7 @@
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
-        cursor {
+        CURSOR {
             bindings = <
 &kp LG(F)  &kp LSHIFT  &kp LG(Y)  &kp LG(Z)  &kp BACKSPACE  &kp LG(X)                     &kp UP               &kp LG(X)  &none           &none         &none           &none            &none
 &kp LG(L)  &kp LCTRL   &kp LALT   &kp LGUI   &kp LSHIFT     &kp LG(C)           &kp LEFT  &none     &kp RIGHT  &kp LG(C)  &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LG(L)
@@ -205,7 +205,7 @@
                                   &trans     &none          &none                                              &none      &none           &mo 6
             >;
 
-            label = "cursor";
+            label = "CURSOR";
         };
 
         NUMPAD {
@@ -220,7 +220,7 @@
         };
 
         fn {
-            display-name = "Fn";
+            display-name = "FUNC";
             bindings = <
 &studio_unlock  &kp F1  &kp F2      &kp F3       &kp F4     &kp F5                                &mmv MOVE_UP                     &kp F6  &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
 &none           &none   &mkp LCLK   &mkp MCLK    &mkp RCLK  &none                 &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &none   &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
@@ -251,7 +251,7 @@
                                        &kp LSHFT         &none              &none                                           &kp LC(LG(U))  &kp LC(LG(F))   &kp SPACE
             >;
 
-            label = "window";
+            label = "WINDOW";
         };
 
         magic {
@@ -262,7 +262,7 @@
                                          &trans           &none            &out OUT_BLE                                   &out OUT_USB  &none         &trans
             >;
 
-            label = "magic";
+            label = "MAGIC";
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
     };
