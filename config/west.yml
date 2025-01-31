@@ -6,6 +6,8 @@ manifest:
       # See:
       # - https://zmk.dev/docs/features/modules
       # - https://docs.zephyrproject.org/3.5.0/develop/west/manifest.html#projects
+    - name: m165437 # - https://github.com/M165437/nice-view-gem
+      url-base: https://github.com/M165437 # - https://github.com/M165437/nice-view-gem
   projects:
     - name: eyelash_corne
       url: https://github.com/a741725193/zmk-new_corne
@@ -14,5 +16,8 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
+    - name: nice-view-gem # - https://github.com/M165437/nice-view-gem
+      remote: m165437 # - https://github.com/M165437/nice-view-gem
+      revision: main # - https://github.com/M165437/nice-view-gem
   self:
     path: config
