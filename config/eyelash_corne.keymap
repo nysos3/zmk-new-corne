@@ -30,6 +30,8 @@
     acceleration-exponent = <1>;
 };
 
+&msc { delay-ms = <0>; };
+
 / {
     behaviors {
         td0: td0 {
