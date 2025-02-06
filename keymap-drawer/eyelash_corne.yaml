@@ -12,7 +12,7 @@ layers:
   - I
   - O
   - P
-  - +
+  - {t: '=', s: +}
   - {t: '-', s: _}
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
