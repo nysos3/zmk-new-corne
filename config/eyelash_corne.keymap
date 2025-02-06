@@ -21,7 +21,7 @@
 
  */
 
-#define ZMK_MOUSE_DEFAULT_MOVE_VAL 2200  // 600
+#define ZMK_MOUSE_DEFAULT_MOVE_VAL 6600  // 600
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 60    // 10
 
 &mmv {
