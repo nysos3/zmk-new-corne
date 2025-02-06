@@ -24,6 +24,12 @@
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 2200  // 600
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 60    // 10
 
+&mmv {
+    delay-ms = <0>;
+    time-to-max-speed-ms = <1000>;
+    acceleration-exponent = <1>;
+};
+
 / {
     behaviors {
         td0: td0 {
